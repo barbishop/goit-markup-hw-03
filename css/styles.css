@@ -1,15 +1,57 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--grey: rgba(46, 47, 66, 0.7);
+	--white: #fff;
+	--dairy: #fcfcfc;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 
+  padding-left:  
+  padding-right:  
+  margin-left:  
+  margin-right:
 }
 
 /* #region header */
@@ -100,8 +142,9 @@ a {
 .main-text-bt:focus {
   background-color: #404bbf;
 }
+/* #endregion main */
 
-/* content */
+/* #region content */
 .content-hidden {
   color: transparent;
 }
@@ -124,8 +167,9 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* #endregion content */
 
-/* team */
+/* #region team */
 .team {
   background-color: #f4f4fd;
 }
@@ -164,7 +208,10 @@ a {
   text-align: center;
   color: #434455;
 }
-/* portfolio */
+
+/* #endregion team */
+
+/* #region portfolio */
 
 .portfolio-title {
   font-family: "Roboto", sans-serif;
@@ -194,6 +241,7 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* #endregion portfolio */
 
 /* #region footer */
 .footer {
@@ -228,5 +276,3 @@ a {
   color: #f4f4fd;
 }
 /* #endregion footer */
-
-/* #region main */
