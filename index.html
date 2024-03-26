@@ -5,11 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-01</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,16 +12,20 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!-- #endregion head -->
 
-  <!-- #region body -->
   <body>
     <!-- #region header-->
     <header class="header">
+      <div class="hedder-conteiner container">
       <nav class="header-nav">
         <a class="header-nav-logo" href="./index.html"
           >Web<span class="header-nav-logo-color">Studio</span></a
@@ -54,16 +53,21 @@
           </li>
         </ul>
       </address>
+      </div>
     </header>
     <!-- #endregion header-->
 
     <main>
-      <!-- section main-->
+      <!-- #region main-->
       <section class="main">
+        <div class="container"></div>
         <h1 class="main-text">Effective Solutions for Your Business</h1>
         <button class="main-text-bt" type="button">Order Service</button>
+        </div>
       </section>
-      <!-- section content-->
+      <!-- #endregion main-->
+
+      <!--#region content-->
       <section class="content">
         <h2 class="content-hidden">content</h2>
         <ul class="content-ul">
@@ -97,7 +101,9 @@
           </li>
         </ul>
       </section>
-      <!-- section team-->
+      <!--#endregion content-->
+
+      <!-- #region team-->
       <section class="team">
         <h2 class="team-name">Our Team</h2>
         <ul class="team-ul">
@@ -144,7 +150,9 @@
           </li>
         </ul>
       </section>
-      <!-- section portfolio-->
+      <!-- #endregion team-->
+
+      <!-- #region portfolio-->
       <section class="portfolio">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-ul">
@@ -206,6 +214,7 @@
           </li>
         </ul>
       </section>
+      <!-- #endregion portfolio-->
     </main>
 
     <!-- #region footer -->
@@ -220,5 +229,4 @@
     </footer>
     <!-- #endregion footer -->
   </body>
-  <!-- #endregion body -->
 </html>
