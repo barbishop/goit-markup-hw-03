@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-/* header */
+/* #region header */
 .header-nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -65,8 +65,9 @@ a {
 .header-adress-contact:focus {
   color: #404bbf;
 }
+/* #endregion header */
 
-/* main */
+/* #region main */
 .main {
   background: #2e2f42;
 }
@@ -194,7 +195,7 @@ a {
   color: #434455;
 }
 
-/* footer */
+/* #region footer */
 .footer {
   background-color: #2e2f42;
 }
@@ -226,3 +227,6 @@ a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
+/* #endregion footer */
+
+/* #region main */
