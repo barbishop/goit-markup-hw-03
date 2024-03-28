@@ -1,3 +1,4 @@
+/* #region Basic */
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
@@ -19,7 +20,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  flex-shrink: 0;
 }
 
 ul,
@@ -58,15 +58,33 @@ button {
 }
 
 .container {
-  max-width: 1158 px;
-  padding: 15px 15px;
-  margin-left: auto 156px;
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* #endregion Basic */
+
 /* #region header */
+.header {
+  border-bottom: 1px #e7e9fc;
+  display: flex;
+}
 
 .header .container {
-  align-items: center;
   display: flex;
 }
 
@@ -74,12 +92,8 @@ button {
   display: flex;
   align-items: center;
 }
-.header-nav-ul {
-  display: flex;
-  gap: 40px;
-  margin-left: ;
-}
-.header-nav-logo {
+
+.header-logo-blue {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -90,9 +104,10 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  margin-right: 76px;
+  margin-right: auto;
 }
-.header-logocolor {
+
+.header-logo-black {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -103,6 +118,59 @@ button {
   line-height: 1.17;
   color: #2e2f42;
   display: flex;
+}
+
+.header-nav-ul {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+  margin-right: 332px;
+}
+
+.header-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #404bbf;
+}
+
+.header-contact {
+  font-style: normal;
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.header-contact-ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header-contact-list {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-contact-list:hover,
+.header-contact-list:focus {
+  color: #404bbf;
 }
 
 .header-link {
@@ -120,42 +188,15 @@ button {
   color: #404bbf;
 }
 
-.header-adress {
-  font-style: normal;
-  display: flex;
-  margin-left: auto;
-}
-
-.header-adress-ul {
-  display: flex;
-  gap: 40px;
-}
-
-.header-adress-contact {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  display: flex;
-}
-
-.header-adress-contact:hover,
-.header-adress-contact:focus {
-  color: #404bbf;
-}
 /* #endregion header */
 
 /* #region hero */
-
 .hero {
   background: #2e2f42;
   text-align: center;
 }
-
 .hero .container {
-  padding: 188px 472px;
+  padding: 188px 316px;
   align-items: center;
 }
 
@@ -168,9 +209,9 @@ button {
   text-align: center;
   color: #fff;
   width: 496px;
-  margin-bottom: 48px;
+  text-align: center;
+  margin: auto 48px;
 }
-
 .hero-text-bt {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -181,9 +222,12 @@ button {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
   border: none;
-  margin: 0 auto;
-  padding: 16px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 48px auto;
   min-width: 169px;
 }
 
@@ -194,74 +238,37 @@ button {
 /* #endregion hero */
 
 /* #region content */
-
-.content-hidden {
-  color: transparent;
-}
-
-.content .container {
+.content {
   padding: 120px 0;
-  display: flex;
 }
 .content-ul {
+  display: flex;
+  gap: 24px;
 }
-
 .content-list {
   width: 264px;
-  height: 104px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  display: inline-block;
-  margin-right: 24px;
 }
-
 .content-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
   margin-bottom: 8px;
 }
-
 .content-text {
   font-family: "Roboto", sans-serif;
-  fcolor: #434455;
-  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.5;
 }
 /* #endregion content */
 
 /* #region team */
 .team {
-  background-color: #f4f4fd;
+  padding-bottom: 120px;
+  background-color: #f4f4fd; 
 }
-.team .container {
-  align-items: center;
-}
-
-.team-card {
-  padding-bottom: 32px;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: inline-block;
-  margin-right: 24px;
-  margin-bottom: 120px;
-}
-
 .team-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -274,7 +281,19 @@ button {
   padding-top: 120px;
   padding-bottom: 72px;
 }
-
+.team-ul {
+  background-color: var(--color-cloud);
+  display: flex;
+  gap: 24px;
+}
+.team-card {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
+.team-wr {
+  padding: 32px 0 32px;
+}
 .team-nf {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -282,10 +301,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42;
   margin-bottom: 8px;
 }
-
 .team-function {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -295,65 +312,90 @@ button {
   text-align: center;
   color: #434455;
 }
-
 /* #endregion team */
 
 /* #region portfolio */
+.portfolio {
+  padding: 120px 0;
+  border-bottom: 2px solid black;
+}
+}
 
 .portfolio-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
-
+.portfolio-ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+}
+.portfolio-ul-list {
+  width: calc((100% - 48px) / 3);
+}
 .portfolio-name {
+  olor: #2e2f42;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
-
 .portfolio-type {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 /* #endregion portfolio */
 
 /* #region footer */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
-.footer-logo {
+
+.footer-info {
+  width: 264px;
+  height: 112px;
+}
+
+.footer-logo-blue {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: flex;
+  margin-right: auto;
+  padding-bottom: 17.5px;
+}
+.footer-logo-white {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-}
-
-.footer-logo-color {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  line-height: 1.17;
   color: #f4f4fd;
+  display: flex;
 }
-
 .footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -361,5 +403,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
 }
 /* #endregion footer */
