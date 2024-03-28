@@ -321,19 +321,19 @@ button {
   padding: 120px 0;
   border-bottom: 2px solid black;
 }
-}
 
 .portfolio-title {
-  color: #2e2f42;
-  text-transform: capitalize;
-  font-family: "Roboto", sans-serif;
+  color: #2E2F42;
   font-size: 36px;
+  font-family: Roboto;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 40px;
   letter-spacing: 0.72px;
+  word-wrap: break-word;
   text-align: center;
-   margin-bottom: 72px;
+  margin-bottom: 72px;
 }
+
 .portfolio-ul {
   list-style: none;
   display: flex;
