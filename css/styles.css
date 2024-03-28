@@ -105,7 +105,7 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  margin-right: 76px;
+  margin-right: auto;
 }
 
 .header-logo-black {
@@ -208,10 +208,11 @@ button {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  display: block;
   color: #fff;
-  max-width: 496px;
   text-align: center;
-  margin: auto 48px;
+  margin: 0 316px 48px;
+  max-width: 496px;
 }
 .hero-text-bt {
   font-family: "Roboto", sans-serif;
@@ -222,13 +223,12 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
-  cursor: pointer;
-  border-radius: 4px;
   padding: 16px 32px 16px 32px;
+  border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: block;
-  margin: 48px auto;
+  margin: 0 auto;
   min-width: 169px;
 }
 
@@ -389,7 +389,6 @@ button {
   color: #4d5ae5;
   display: inline-block;
   margin-right: auto;
-  margin-bottom: 16px;
 }
 .footer-logo-white {
   display: inline-block;
@@ -401,7 +400,8 @@ button {
   text-transform: uppercase;
   line-height: 1.17;
   color: #f4f4fd;
-  display: flex;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   font-family: "Roboto", sans-serif;
