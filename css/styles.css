@@ -456,10 +456,14 @@ button {
   padding: 100px 0;
   display: flex;
 }
-
-.footer-info {
+.footer .container {
+  display: flex;
+}
+.footer-logo {
+  display: block;
   width: 264px;
   height: 112px;
+  margin-right: 120px;
 }
 
 .footer-logo-blue {
@@ -496,6 +500,46 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-social {
+  display: block;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-https {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+}
+
+.footer-social-text {
+  margin-bottom: 16px;
+  color: white;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.footer-social-https:hover,
+.footer-social-https:focus {
+  background-color: #31d0aa;
 }
 
 /* #endregion footer */
